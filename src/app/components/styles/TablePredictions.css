@@ -1,0 +1,39 @@
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.table-predictions::-webkit-scrollbar {
+    display: none;
+}
+
+/*Hide scrollbar for IE, Edge and Firefox */
+.table-predictions {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.table-predictions{
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.predictions-title h5{
+    margin-top: 0;
+}
+.table-predictions >table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.table-predictions table{
+    box-shadow: 0.5px 0.5px 0.5px 0.5px  #000000;
+}
+
+.table-predictions > table th{
+    font-size: 10px;
+}
+
+.table-date, .table-cases{
+    font-size: 7px;
+
+}

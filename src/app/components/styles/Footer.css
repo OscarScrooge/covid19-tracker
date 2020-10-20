@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    background-color: #ffebcc;
+    margin: 0;
+}
+
+.footer > h6{
+    margin: 0;
+}
+
+.footer > h6:nth-child(1){
+    margin-bottom: 5px;
+}
+
+.footer > h6>a{
+    text-decoration: none;
+}

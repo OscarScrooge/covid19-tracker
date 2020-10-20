@@ -1,0 +1,36 @@
+.map-chart{
+    padding: 20px;
+}
+.map-chart > .rsm-svg{
+    height: 250px;
+    width: 100%;
+    background-color: #e6f7ff;
+    box-shadow: 1px 1px 2px 2px  #000000;
+}
+
+.mark > text{
+    transition: transform 0.3s;
+    display: none;
+}
+
+.mark > circle:hover + text{
+    transform: scale(8);
+    display: block;
+}
+.mark > circle{
+    transition: transform 0.3s;
+}
+.mark > circle:hover{
+    cursor: pointer;
+    transform: scale(5);
+
+}
+
+
+.marker-text{
+    font-weight: bold;
+    font-size: 0.5px;
+}
+
+
+
