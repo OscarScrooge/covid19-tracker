@@ -6,10 +6,11 @@ export function setCountries(countries){
     })
 }
 
-export function setStatusByCountry(status){
+export function setStatusByCountry(status,countryName){
     return({
         type: 'set-status',
         status,
+        countryName
     })
 }
 

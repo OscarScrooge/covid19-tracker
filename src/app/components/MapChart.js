@@ -18,19 +18,28 @@ function MapChart(props) {
    useEffect(()=>{
         const request = axios.get(requests.fetchCountries);
         request.then(request=>props.dispatch(setCountries(request.data)));
-    },[])
+    },[]);
 
-    const handleClick =(alpha2)=>{
-        let request;
-        request = axios.get(requests.fetchStatusByCountry+alpha2);
-        request.then(request => props.dispatch(setStatusByCountry(request.data)));
-        request = axios.get(requests.fetPredictionByCountry+alpha2);
+    const handleClick =(alpha2,name)=>{
+        fetchStatusByCountry(alpha2,name);
+        fetchPredictionByCountry(alpha2)
+        // window.scrollTo(0, 0);
+    };
+
+    const fetchStatusByCountry = (alpha2,name)=>{
+
+        const request = axios.get(requests.fetchStatusByCountry+alpha2);
+        request.then(request => props.dispatch(setStatusByCountry(request.data,name)));
+    };
+
+    const fetchPredictionByCountry =(alpha2)=>{
+
+        const request = axios.get(requests.fetPredictionByCountry+alpha2);
         request.then(request => props.dispatch(setPredictions(request.data)))
             .catch((error)=>{
                 props.dispatch(setPredictions([]))
             });
-        // window.scrollTo(0, 0);
-    }
+    };
 
     const geoUrl =
         "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
@@ -53,7 +62,7 @@ function MapChart(props) {
                     {props.markers.map(({ name, coordinates, markerOffsetY,alpha2 }) => (
                         <Marker key={name} coordinates={coordinates} className="mark">
                             <circle
-                                onClick={e=>{handleClick(alpha2)}}
+                                onClick={e=>{handleClick(alpha2,name)}}
                                 r={1.2}
                                 fill="#F00"
                                 strokeWidth={2}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/CardInfo.css';
 
-function CardInfo({title,cases,icon}) {
+function CardInfo({title,cases,icon,icon2}) {
 
     return (
         <div className="card-info">
@@ -11,7 +11,10 @@ function CardInfo({title,cases,icon}) {
 
             <div className="card-info-cases">
                 <h5>{cases}</h5>
-                {icon}
+                <div className="card-info-icons">
+                    {icon}
+                    {icon2}
+                </div>
             </div>
 
         </div>

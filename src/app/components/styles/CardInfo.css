@@ -9,6 +9,15 @@
     box-shadow: 1px 1px 2px 2px  #000000;
 }
 
+.card-info{
+    transition: transform 0.5s;
+}
+
+
+.card-info:hover{
+    transform: scale(1.09);
+}
+
 .card-info-title > h5{
     margin: 0;
     margin-bottom: 2px;
@@ -16,12 +25,68 @@
 
 .card-info-cases{
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
 .card-info-cases > h5{
     margin: 0;
     margin-right: 10px;
+}
+
+.card-info-icons{
+    position: relative;
+}
+
+.cases-icon{
+    color: #ff8080;
+}
+
+.recovered-icon{
+    background-color: green;
+    border-radius: 50px;
+    display: none !important;
+}
+
+.deaths-icon{
+    background-color: darkorange;
+    border-radius: 50px;
+    display: none !important;
+}
+
+.satisfied-icon{
+    background-color:green;
+    border-radius: 50px;
+}
+
+.dissatisfied-icon{
+    background-color:darkorange;
+    border-radius: 50px;
+}
+
+
+.icon{
+    position: absolute;
+}
+
+.card-info:hover  .recovered-icon{
+   display: inline-block !important;
+}
+
+.card-info:hover  .satisfied-icon{
+    display: none !important;
+}
+
+.card-info:hover  .deaths-icon{
+    display: inline-block !important;
+}
+
+.card-info:hover  .dissatisfied-icon{
+    display: none !important;
+}
+
+.card-info:hover .cases-icon{
+    color: #ff0000;
 }
 
 
