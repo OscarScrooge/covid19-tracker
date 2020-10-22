@@ -1,11 +1,12 @@
 .map-chart{
     padding: 20px;
+    height: 400px;
 }
 .map-chart > .rsm-svg{
-    height: 250px;
+    height: 100%;
     width: 100%;
     background-color: #e6f7ff;
-    box-shadow: 1px 1px 2px 2px  #000000;
+    box-shadow: 1px 1px 2px 2px #000000;
 }
 
 .mark > text{

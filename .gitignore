@@ -1,4 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+.firebase/hosting.YnVpbGQ.cache
+.firebaserc
+.github/workflows/firebase-hosting-merge.yml
+.github/workflows/firebase-hosting-pull-request.yml
+firebase-debug.log
+firebase.json
 
 /.ideagit
 # dependencies

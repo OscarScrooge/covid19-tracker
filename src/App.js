@@ -9,10 +9,13 @@ import Footer from "./app/components/Footer";
 function App() {
   return (
     <div className="App">
+        <div style={{margin: "auto",
+            position: "relative"}}>
        <Card />
        <Predictions />
        <Map />
-       <Footer/>
+        </div>
+        <Footer/>
     </div>
   );
 }

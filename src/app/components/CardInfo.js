@@ -6,11 +6,11 @@ function CardInfo({title,cases,icon,icon2}) {
     return (
         <div className="card-info">
             <div className="card-info-title">
-                <h5>{title}</h5>
+                <h3>{title}</h3>
             </div>
 
             <div className="card-info-cases">
-                <h5>{cases}</h5>
+                <h3>{cases}</h3>
                 <div className="card-info-icons">
                     {icon}
                     {icon2}

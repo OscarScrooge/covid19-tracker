@@ -18,7 +18,7 @@ function Card(props) {
             :
             <div className="card">
                 <div className="country">
-                    <h4>{countryName}</h4>
+                    <h2>{countryName}</h2>
                 </div>
                 <CardInfo
                     title={"Cases"}

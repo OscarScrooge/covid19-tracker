@@ -17,7 +17,7 @@
     padding: 10px;
 }
 
-.predictions-title h5{
+.predictions-title h3{
     margin-top: 0;
 }
 .table-predictions >table, th, td{
@@ -30,10 +30,10 @@
 }
 
 .table-predictions > table th{
-    font-size: 10px;
+    font-size: 18px;
 }
 
 .table-date, .table-cases{
-    font-size: 7px;
+    font-size: 15px;
 
 }

@@ -1,6 +1,6 @@
 .card-info{
-    width: 100px;
-    height: 50px;
+    width: 250px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -18,8 +18,9 @@
     transform: scale(1.09);
 }
 
-.card-info-title > h5{
-    margin: 0;
+.card-info-title > h3{
+
+    margin-top: 2px;
     margin-bottom: 2px;
 }
 
@@ -29,8 +30,8 @@
     justify-content: center;
 }
 
-.card-info-cases > h5{
-    margin: 0;
+.card-info-cases > h3{
+    margin: 5px;
     margin-right: 10px;
 }
 
@@ -67,6 +68,7 @@
 
 .icon{
     position: absolute;
+    font-size: 2.5rem !important;
 }
 
 .card-info:hover  .recovered-icon{

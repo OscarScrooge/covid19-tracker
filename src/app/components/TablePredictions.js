@@ -5,7 +5,7 @@ function TablePredictions(props) {
     return (
         <div className="table-predictions">
             <div className="predictions-title">
-                <h5>14 Days Prediction</h5>
+                <h3>14 Days Prediction</h3>
             </div>
             <table>
                 <tbody>
